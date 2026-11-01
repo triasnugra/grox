@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASGRA Mesin 2</title>
+    <meta
+      name="description"
+      content="Mesin analisis crypto ASGRA dengan gerbang kualitas. Setup basi, simbol kosong, dan long Monday Low tidak diterbitkan."
+    />
+    <meta name="theme-color" content="#0c1210" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <script>
+      // GitHub Pages cannot answer ?install=1&platform=ios on the server, so the
+      // Home Screen tutorial (a static page written at build time) is opened here.
+      (function () {
+        try {
+          var q = new URLSearchParams(window.location.search);
+          var platform = (q.get("platform") || "").toLowerCase();
+          var install = q.get("install");
+          if ((install === "1" || install === "true") && platform === "ios") {
+            window.location.replace("%BASE_URL%__grok/install/index.html" + window.location.search);
+          }
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+  </head>
+  <body style="background: #0c1210; color: #e7efe9">
+    <div id="root"></div>
+    <noscript>ASGRA Mesin 2 membutuhkan JavaScript.</noscript>
+    <script type="module" src="/src/pages/main.tsx"></script>
+  </body>
+</html>
